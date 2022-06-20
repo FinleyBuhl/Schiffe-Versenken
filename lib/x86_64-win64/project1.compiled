@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="C:\lazarus\fpc\3.2.2\bin\x86_64-win64\fpc.exe" Date="1411539275"/>
+  <Params Value=" -MObjFPC -Scghi -CX -WR -Os3 -XX -WG -l -vewnhibq &quot;-FiE:\pascal\Schiffe versenken p2p\lib\x86_64-win64&quot; -FuC:\Users\fbuhl\Downloads\lnet-master\lazaruspackage\lib\x86_64-win64 -FuC:\lazarus\components\ideintf\units\x86_64-win64\win32 -FuC:\lazarus\components\lazcontrols\lib\x86_64-win64\win32 -FuC:\lazarus\lcl\units\x86_64-win64\win32 -FuC:\lazarus\lcl\units\x86_64-win64 -FuC:\lazarus\components\freetype\lib\x86_64-win64 -FuC:\lazarus\components\buildintf\units\x86_64-win64 -FuC:\lazarus\components\lazutils\lib\x86_64-win64 -FuC:\lazarus\packager\units\x86_64-win64 &quot;-FuE:\pascal\Schiffe versenken p2p\&quot; &quot;-FUE:\pascal\Schiffe versenken p2p\lib\x86_64-win64\&quot; &quot;-FEE:\pascal\Schiffe versenken p2p\&quot; &quot;-oE:\pascal\Schiffe versenken p2p\project1.exe&quot; -dLCL -dLCLwin32 project1.lpr"/>
+</CONFIG>
