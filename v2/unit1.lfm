@@ -1,0 +1,95 @@
+object Form1: TForm1
+  Left = 395
+  Height = 480
+  Top = 223
+  Width = 853
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 853
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnKeyPress = FormKeyPress
+  LCLVersion = '2.2.2.0'
+  object StringGrid1: TStringGrid
+    Left = 5
+    Height = 334
+    Top = 5
+    Width = 334
+    ColCount = 10
+    DefaultColWidth = 33
+    DefaultRowHeight = 33
+    FixedCols = 0
+    FixedRows = 0
+    GridLineColor = clGray
+    RowCount = 10
+    TabOrder = 0
+    OnClick = StringGrid1Click
+    OnDrawCell = StringGrid1DrawCell
+  end
+  object StringGrid2: TStringGrid
+    Left = 384
+    Height = 334
+    Top = 5
+    Width = 334
+    ColCount = 10
+    DefaultColWidth = 33
+    DefaultRowHeight = 33
+    FixedCols = 0
+    FixedRows = 0
+    GridLineColor = clGray
+    RowCount = 10
+    TabOrder = 1
+    OnClick = StringGrid2Click
+    OnDrawCell = StringGrid2DrawCell
+  end
+  object Button1: TButton
+    Left = 5
+    Height = 25
+    Top = 384
+    Width = 75
+    Caption = 'connect'
+    OnClick = Button1Click
+    TabOrder = 2
+  end
+  object Edit1: TEdit
+    Left = 5
+    Height = 30
+    Top = 411
+    Width = 80
+    TabOrder = 3
+    Text = 'Edit1'
+  end
+  object Label1: TLabel
+    Left = 91
+    Height = 16
+    Top = 416
+    Width = 12
+    Caption = 'IP'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 501
+    Height = 1
+    Top = 384
+    Width = 1
+    Font.Height = -40
+    ParentColor = False
+    ParentFont = False
+  end
+  object tcp: TLTCPComponent
+    Port = 60000
+    OnReceive = tcpReceive
+    OnConnect = tcpConnect
+    OnAccept = tcpConnect
+    Timeout = 0
+    ReuseAddress = False
+    Left = 202
+    Top = 50
+  end
+  object Timer1: TTimer
+    Interval = 200
+    OnTimer = Timer1Timer
+    Left = 172
+    Top = 94
+  end
+end
